@@ -35,3 +35,5 @@ mainMenu = Menu(_menu, tearoff=0)
 mainMenu.add_command(label="Open", command=openDialog)
 mainMenu.add_command(label="Help", command= lambda: tkmsg.showinfo("Help", "Check repository for details."))
 mainMemu.add_command(label="Compile", command=pyluaTranspile)
+
+_menu.add_cascade(label="Menu", menu=mainMenu)
