@@ -1,0 +1,7 @@
+Permissions:
+Allow:
+- Commercial use
+- Private use
+- Credited modification
+Disallow:
+- Use any of the code in this repository, without credit.
