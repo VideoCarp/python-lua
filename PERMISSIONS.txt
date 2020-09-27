@@ -1,7 +1,20 @@
 Permissions:
 Allow:
 - Commercial use
+- Use transpiled code without crediting
 - Private use
 - Credited modification
+- Remake in different programming language.
 Disallow:
-- Use any of the code in this repository, without credit.
+- Usage of any untranspiled code or file from this repository, outside it.
+- Copy and improve transpiler, without contributing, or writing in a different language.
+
+Details:
+"Commercial use": You are allowed to use this transpiler and sell, or commercially 
+use the output of the transpiler.
+
+"Use transpiler code without crediting": You are not required to say you used this
+transpiler if you use it.
+
+"Private use": You can 
+"Remake in different programming language."
