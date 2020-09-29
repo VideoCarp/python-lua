@@ -16,5 +16,9 @@ use the output of the transpiler.
 "Use transpiler code without crediting": You are not required to say you used this
 transpiler if you use it.
 
-"Private use": You can 
-"Remake in different programming language."
+"Private use": You can use this for private usage.
+"Remake in different programming language.": You can remake this in a different programming language.
+
+"Usage of any transpiled code or file from this repository, outside it.": Do not use any of the code in this repository outside it, and not for installation.
+
+"Copy and improve transpiler, without contributing, or writing in a different language": Usage of code from this repository, improving, and claiming as your own. If you want to do so, contribute, or write from no premade code.
