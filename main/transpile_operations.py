@@ -30,6 +30,7 @@ parse_dict = {
 # All above this are transpiled with NO condition.
 parser2 = {"prtonumber": "print"} # Second parsing with NO condition, done after the first.
 # SPLIT
+split_strings = toParse.split('"') # CHANGE to ' for ' strings that don't get modified.
 split_array = toParse.split(lineBreak)
 split_length = len(split_array)
 
@@ -44,31 +45,32 @@ for k,v in parser2.items():
 split_array = finished.split(lineBreak)
 result_array = []
 for line in split_array:
-    if "#exclude" not in line:
-        if "while" in line:
-            result_array.append(line.replace(":", " do"))
-        elif "if" in line:
-              result_array.append(line.replace(":", " then"))
-        elif "class" in line:
-              result_array.append(line.replace("class ", "local ").replace(":", " = {"))
-        elif " = " in line and "  " not in line and "  " not in line: # doublespace and tab.
-              result_array.append(line.replace(line, "local " + line)\
-              .replace("[", "{").replace("]", "}"))
+    for split_string in split_strings:
+        if split_string not in line:
+            if "while" in line:
+                result_array.append(line.replace(":", " do")) 
+            elif "if" in line:
+                result_array.append(line.replace(":", " then"))
+           elif "class" in line:
+                result_array.append(line.replace("class ", "local ").replace(":", " = {"))
+           elif " = " in line and "  " not in line and "  " not in line: # doublespace and tab.
+                result_array.append(line.replace(line, "local " + line)\
+               .replace("[", "{").replace("]", "}"))
 
-        elif "else:" in line:
-              result_array.append(line.replace(":", ""))
-        elif "max(" in line and ")" in line:
-              result_array.append(line.replace("max(", "math.max("))
-        elif "min(" in line and ")" in line:
-              result_array.append(line.replace("min(", "math.min("))
-        elif "lamba" in line and ":" in line:
-              result_array.append(line.replace("lamda", "function").replace(" :", "()").replace(":", "("))
-        else:
-            result_array.append(line)
-        text_box.delete(1.0, END)
-        text_box.insert(1.0, '-- Result:\n' + "\n".join(result_array))
+           elif "else:" in line:
+                result_array.append(line.replace(":", ""))
+          elif "max(" in line and ")" in line:
+                result_array.append(line.replace("max(", "math.max("))
+          elif "min(" in line and ")" in line:
+                result_array.append(line.replace("min(", "math.min("))
+          elif "lamba" in line and ":" in line:
+                result_array.append(line.replace("lamda", "function").replace(" :", "()").replace(":", "("))
+          else:
+                result_array.append(line)
+ 
         
         """Optional to write file directly in dir."""
         #newFile = open("result.txtl", "+w")
         #newFile.write('\n'.join(result_array))
-        
+text_box.delete(1.0, END)
+text_box.insert(1.0, '-- Result:\n' + "\n".join(result_array))
