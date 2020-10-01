@@ -37,7 +37,7 @@ We're planning to make indentation automatically add `end` but currently it's un
 
 Lua has no classes, therefore declaring a Python class creates a Lua table, which is basically a dictionary, which is referred
 to the same way as classes (eg: `tablename.tablevalue`). You need to end each class/table with `#class`.<br>
-Lua tables normally do carry functions, however if you want to add one to your `class`, please use `name = function() ... #end`.
+Lua tables normally do carry functions, however if you want to add one to your `class`, please use lambdas, not functions, eg: `name = lambda: ... #end`.
 
 * Dictionaries are to be written with `=`<br>
 
