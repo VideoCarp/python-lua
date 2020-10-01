@@ -22,13 +22,17 @@ There are a lot of things you need to be mindful of when using the compiler, to 
 
 Here is also a list of things you need to know:
 * Lua built-in functions are to be used.<br>
+<br>
 Use Lua functions, don't use Python ones, think of this as Lua with a Python syntax.
 * Indentation doesn't add `end`<br>
+<br>
 Always add `#end` as you would in Lua, at the end of an expression, a function, etc.
 We're planning to make indentation automatically add `end` but currently it's unavailable.
 * Classes become Tables<br>
+<br>
 Lua has no classes, therefore declaring a Python class creates a Lua table, which is basically a dictionary, which is referred
 to the same way as classes (eg: `tablename.tablevalue`). You need to end each class/table with `#class`.<br>
 Lua tables normally do carry functions, however if you want to add one to your `class`, please use `name = function() ... #end`.<br>
 * Dictionaries are to be written with `=`<br>
+<br>
 You need to write each dictionary with `=`, not `"key": "value"` rather `key = "value"`
