@@ -6,6 +6,8 @@ It also supports usage of normal Lua functions in the scripts you're transpiling
 The aim of this transpiler is to allow a Python syntax while using Lua functions, whenever you need a specifically Lua script.<br>
 All variable declarations automatically become `local` in the output, which if outside any expression, will be equivalent to a global.<br>
 
+Discord: https://discord.gg/5zGVZ6f
+
 # Installation
 Installing this transpiler is simple, and any device that can run Python can install it, so macOS, Linux, and Windows are all probably able to do it, Windows has been tested and works successfully.<br>
 Here are some steps on how to install it:
