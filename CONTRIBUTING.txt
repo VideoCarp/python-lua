@@ -1,0 +1,3 @@
+Do you want to improve this transpiler? 
+Feel free to suggest things by opening an issue, or directly creating a pull request (press edit on a file).
+Do NOT copy any of this code and use in your own full repository (excluding forks and private uses).
