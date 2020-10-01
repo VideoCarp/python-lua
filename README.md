@@ -9,12 +9,12 @@ All variable declarations automatically become `local` in the output, which if o
 # Installation
 Installing this transpiler is simple, and any device that can run Python can install it, so macOS, Linux, and Windows are all probably able to do it, Windows has been tested and works successfully.<br>
 Here are some steps on how to install it:
-* Download Python 3.8.x or higher
+* Download Python 3.8.x or higher<br>
 Other Python versions (such as 3.5, 3.4, etc) may work, but have not been tested
 if you already have an older version, use that. If an error occurs, upgrade.
-* Download the scripts
+* Download the scripts<br>
 You can clone this repository, or install the `main` folder. No compilation is necessary, Python is interpreted.
-* Run `compiler.py`
+* Run `compiler.py`<br>
 You will have now ran the compiler.
 
 # Usage
