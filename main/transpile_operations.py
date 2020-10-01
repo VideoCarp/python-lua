@@ -61,7 +61,8 @@ for line in split_array:
               result_array.append(line.replace("max(", "math.max("))
         elif "min(" in line and ")" in line:
               result_array.append(line.replace("min(", "math.min("))
- 
+        elif "lamba" in line and ":" in line:
+              result_array.append(line.replace("lamda", "function").replace(" :", "()").replace(":", "("))
         else:
             result_array.append(line)
         text_box.delete(1.0, END)
