@@ -51,5 +51,4 @@ Example:
 example_string = "Hello"
 example_string = example_string.replace("Hello", "Hello World!") # Automatically corrects to gsub.
 print(example_string)
-``'
-
+```
