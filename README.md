@@ -45,6 +45,7 @@ Lua tables normally do carry functions, however if you want to add one to your `
 You need to write each dictionary with `=`, not `"key": "value"` rather `key = "value"`
 
 # Changelog:
+NOTICE: Changelog is for the most recent thing, not the entire thing.
 - Add support for `.replace`, changes into `:gsub`.<br>
 Example: 
 ```py
