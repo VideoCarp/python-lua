@@ -43,3 +43,13 @@ Lua tables normally do carry functions, however if you want to add one to your `
 
 
 You need to write each dictionary with `=`, not `"key": "value"` rather `key = "value"`
+
+# Changelog:
+- Add support for `.replace`, changes into `:gsub`.<br>
+Example: 
+```py
+example_string = "Hello"
+example_string = example_string.replace("Hello", "Hello World!") # Automatically corrects to gsub.
+print(example_string)
+``'
+
