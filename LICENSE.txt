@@ -1,3 +1,6 @@
+Do not use if you are uncertain of what is and what isn't allowed.
+Document expects you to understand exactly what everything in this means.
+
 Permissions:
 Allow:
 - Commercial use
