@@ -67,6 +67,8 @@ for line in split_array:
               result_array.append(line.replace("lamda", "function").replace(" ", "(").replace(":", ")"))
         elif "lambda" in line and ":" in line and " " not in line:
               result_array.append(line.replace("lambda", "function").replace(":", "()"))
+        elif "for " in line and ":" in line:
+              result_array.append(line.replace(":", "do"))
         else:
             result_array.append(line)
         text_box.delete(1.0, END)
