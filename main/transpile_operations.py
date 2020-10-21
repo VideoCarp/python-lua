@@ -27,7 +27,8 @@ parse_dict = {
       "time.sleep(": "wait(",
       "random.randint(": "math.random(",
       "random.randrange(": "math.random(",
-      ".replace(": ":gsub("
+      ".replace(": ":gsub(",
+      ".format(": ":format("
     }
 # All above this are transpiled with NO condition.
 parser2 = {"prtonumber": "print"} # Second parsing with NO condition, done after the first.
