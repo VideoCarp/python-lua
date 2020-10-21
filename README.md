@@ -44,12 +44,14 @@ Lua tables normally do carry functions, however if you want to add one to your `
 
 You need to write each dictionary with `=`, not `"key": "value"` rather `key = "value"`
 
+* F-strings aren't supported.
+
+Due to my skill level, I wasn't able to support f-strings. However, you can use the `.format`.
 # Changelog:
 NOTICE: Changelog is for the most recent thing, not the entire thing.
-- Add support for `.replace`, changes into `:gsub`.<br>
+- Add support for format function.<br>
 Example: 
 ```py
 example_string = "Hello"
-example_string = example_string.replace("Hello", "Hello World!") # Automatically corrects to gsub.
-print(example_string)
+print("{0} World!".format(example_string))
 ```
