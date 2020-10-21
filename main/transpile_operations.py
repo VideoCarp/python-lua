@@ -28,7 +28,7 @@ parse_dict = {
       "random.randint(": "math.random(",
       "random.randrange(": "math.random(",
       ".replace(": ":gsub(",
-      ".format(": ":format("
+      ".format(": "(:format(" # for some weird reason, lua wants to end the function before formatting.
     }
 # All above this are transpiled with NO condition.
 parser2 = {"prtonumber": "print"} # Second parsing with NO condition, done after the first.
