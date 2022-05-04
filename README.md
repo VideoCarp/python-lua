@@ -1,6 +1,6 @@
 # Python to Lua
 This transpiler compiles Python to Lua automatically.<br>
-If you just want to use indentation syntax, have a look at [IndentSyntax](https://github.com/VideoCarp/IndentSyntax).
+If you just want to use indentation syntax, have a look at [IndentSyntax](https://github.com/VideoCarp/IndentSyntax).<br>
 It also supports usage of normal Lua functions in the scripts you're transpiling, such as `string.gsub` in Lua.<br>
 `end`s are placed manually, with `#end`, `class` becomes a `table` (end with `#class`).<br>
 
