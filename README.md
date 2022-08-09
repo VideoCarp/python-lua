@@ -12,7 +12,7 @@ Discord: https://discord.gg/5zGVZ6f
 # Installation
 Installing this transpiler is simple, and any device that can run Python can install it, so macOS, Linux, and Windows are all probably able to do it, Windows has been tested and works successfully.<br>
 Here are some steps on how to install it:
-* Download Python 3.8.x or higher<br>
+* Download Python 3.10.x or higher<br>
 Other Python versions (such as 3.5, 3.4, etc) may work, but have not been tested
 if you already have an older version, use that. If an error occurs, upgrade.
 * Download the scripts<br>

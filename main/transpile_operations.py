@@ -6,7 +6,7 @@ If you want to improve it, fork and contribute, or write from scratch.
 """
 
 tkmsg.showinfo("Compile", "Compiling. This may take some time.")
-toParse = text_box.get(1.0, END)
+toParse = text_box.get(END)
 lineBreak = """
 """ # This functions.
 parse_dict = {
@@ -78,3 +78,4 @@ for line in split_array:
         """Optional to write file directly in dir."""
         #newFile = open("result.txtl", "+w")
         #newFile.write('\n'.join(result_array))
+
